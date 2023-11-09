@@ -806,6 +806,10 @@ video {
   width: 100%;
 }
 
+.max-w-\[1440px\] {
+  max-width: 1440px;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -1316,6 +1320,14 @@ video {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
