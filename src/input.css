@@ -7,3 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@layer components {
+  body {
+    @apply flex flex-col items-center justify-center w-full m-auto bg-gray-800;
+  }
+}
