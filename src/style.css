@@ -546,6 +546,14 @@ video {
   max-width: 1440px;
 }
 
+.max-w-\[1240px\] {
+  max-width: 1240px;
+}
+
+.max-w-\[1280px\] {
+  max-width: 1280px;
+}
+
 .flex-col {
   flex-direction: column;
 }
