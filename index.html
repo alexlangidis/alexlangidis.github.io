@@ -7,29 +7,496 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./src/style.css" />
-    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./src/script.js" defer></script>
+    <title>Alex Langidis - Portfolio</title>
   </head>
   <body>
-    <h1 class="mt-8 text-3xl font-bold text-white underline">Coming Soon!</h1>
-    <!-- <div class="flex justify-between items-center w-full max-w-[1440px] header">
-      <h2 class="text-white">AlexLang.Dev</h2>
-      <nav class="">
-        <ul class="flex gap-4">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact me</a></li>
-          <li class="text-green-400"><a href="#">Resume</a></li>
-        </ul>
-      </nav>
+    <div class="relative sticky top-0 z-50 w-full bg-slate-800">
+      <div
+        class="flex items-center justify-between py-4 px-8 navigation max-w-[1440px] w-full m-auto"
+      >
+        <h2 class="text-[1.5rem]">AlexLag.dev</h2>
+        <!--Mobile menu-->
+        <i
+          class="hover:cursor-pointer fa-solid fa-bars text-[1.5rem] lg:hidden"
+        ></i>
+        <nav
+          class="absolute top-0 right-0 max-w-[600px] h-screen p-4 bg-slate-800 mobile-menu hidden lg:hidden"
+        >
+          <i
+            class="absolute top-6 right-8 hover:cursor-pointer fa-solid fa-xmark text-[2rem] hidden"
+          ></i>
+          <ul class="flex flex-col px-10 mt-20">
+            <li><a href="#hero" class="scroll-link">Home</a></li>
+            <li><a href="#about" class="scroll-link">About</a></li>
+            <li><a href="#projects" class="scroll-link">Projects</a></li>
+            <li><a href="#contact" class="scroll-link">Contact</a></li>
+          </ul>
+        </nav>
+        <!--Desktop menu-->
+        <nav class="hidden desktop-menu lg:flex">
+          <ul class="flex gap-10">
+            <li><a href="#hero" class="scroll-link">Home</a></li>
+            <li><a href="#about" class="scroll-link">About</a></li>
+            <li><a href="#projects" class="scroll-link">Projects</a></li>
+            <li><a href="#contact" class="scroll-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
-    <section class="w-full text-white bg-black">
-      <h2>Front-End Developer</h2>
-      <p>
-        Hi,I'm Alexandros Langidis. A passionate Front-End Developer based in
-        Athens, Greece
-      </p>
-    </section> -->
+    <main class="w-full overflow-hidden">
+      <!--Hero Section-->
+      <section id="hero">
+        <div
+          class="flex flex-col items-center justify-center w-full mt-8 text-center hero__content lg:flex-row-reverse lg:justify-evenly max-w-[1440px] m-auto"
+        >
+          <img
+            src="./src/images/channels3_profile.jpg"
+            alt="avatar"
+            class="max-w-[300px] w-full"
+          />
+          <div
+            class="hero__text p-4 flex flex-col items-center justify-center lg:text-left lg:max-w-[600px] lg:mr-10 lg:items-start"
+          >
+            <h1 class="text-[3rem] font-bold p-4">Front-End Developer</h1>
+            <p class="text-[1.3rem] p-4">
+              Hi, I'm Alex Langidis. A passionate Front-end Developer based in
+              Athens, Greece.
+            </p>
+            <div class="flex gap-4 p-8 contact">
+              <a href="https://github.com/alexlangidis" target="_blank">
+                <img
+                  src="https://skillicons.dev/icons?i=github&theme=light"
+                  alt="skill-icon"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alex-langidis"
+                target="_blank"
+              >
+                <img
+                  src="https://skillicons.dev/icons?i=linkedin&theme=light"
+                  alt="skill-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center w-full mt-10 mb-28 tech__stack lg:flex-row lg:gap-10 lg:justify-center"
+        >
+          <h2 class="text-[1.5rem] mb-4 border-b-2">Tech Stack</h2>
+          <img
+            src="https://skillicons.dev/icons?i=html,css,js,jquery,mysql,sass,tailwind&theme=light"
+            alt="skill-icon"
+          />
+        </div>
+      </section>
+      <!--End of Hero Section-->
+
+      <!--About Section-->
+      <section id="about" class="p-10 bg-black">
+        <div
+          class="about__content flex flex-col items-center justify-center w-full py-10 lg:flex-row lg:gap-10 max-w-[1440px] m-auto lg:justify-evenly"
+        >
+          <div class="about__content__img">
+            <img
+              src="../alexlangidis.github.io/src/images/giphy.gif"
+              alt="gif"
+              class="w-full rounded-3xl"
+            />
+          </div>
+          <div
+            class="about__content__text flex flex-col items-center justify-center text-center max-w-[500px] p-4 lg:text-left lg:items-start"
+          >
+            <h2 class="text-[2rem] text-green-500 font-bold">About Me</h2>
+            <h3 class="text-[1.5rem] font-bold">
+              A dedicated Front-end Developer based in Athens, Greece
+            </h3>
+            <p class="mt-4 text-[1.2rem]">
+              As a Junior Front-End Developer, I possess an impressive arsenal
+              of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I
+              excel in designing and maintaining responsive websites that offer
+              a smooth user experience. My expertise lies in crafting dynamic,
+              engaging interfaces through writing clean and optimized code and
+              utilizing cutting-edge development tools and techniques. I am also
+              a team player who thrives in collaborating with cross-functional
+              teams to produce outstanding web applications.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--End of About Section-->
+
+      <!--Projects - Portfolio Section-->
+      <section id="projects">
+        <!-- 40+ Mini Projects -->
+        <div class="flex justify-center p-10 mt-20 text-center">
+          <h2 class="text-lime-400 text-[3rem] font-light italic underline">
+            40+ Mini Projects Completed
+          </h2>
+        </div>
+        <div class="p-10 projects__content">
+          <div class="projects__content__column">
+            <div
+              class="flex flex-col items-center justify-center p-8 text-center lg:text-left lg:items-start"
+            >
+              <div class="mb-8">
+                <h2 class="text-[2rem] font-bold text-lime-400">
+                  Frontendmentor.io
+                </h2>
+                <p class="mt-8 text-[1.3rem]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum dicta earum accusantium et esse aliquam nihil rem
+                  possimus dignissimos perferendis! Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Consequatur aperiam amet atque
+                  sed nisi repudiandae a dolorem quos. Tempore, maxime!
+                </p>
+              </div>
+
+              <img
+                src="https://skillicons.dev/icons?i=html,css,js,jquery,sass,tailwind&theme=light"
+                alt="skill-icon"
+              />
+
+              <div class="flex flex-col gap-8 mt-8 buttons md:flex-row">
+                <a
+                  href="https://github.com/alexlangidis/junior-frontendmentor"
+                  target="_blank"
+                >
+                  <button class="btn-primary">
+                    Code <i class="ml-1 fa-brands fa-github"></i>
+                  </button>
+                </a>
+                <a
+                  href="https://www.frontendmentor.io/profile/alexlangidis/solutions"
+                  target="_blank"
+                >
+                  <button class="btn-primary">
+                    Live Solutions
+                    <i class="ml-1 fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <img
+              src="../alexlangidis.github.io/src/images/Screenshot_1.png"
+              alt="screenshot"
+              class="w-full rounded-3xl max-w-[500px] border-2 shadow-[0_0_10px_5px_rgba(203,213,225,0.75)] hover:scale-105 duration-500 hover:cursor-pointer hover:shadow-[0_0_20px_10px_rgba(203,213,225,0.75)]"
+            />
+          </div>
+        </div>
+
+        <!--Clone Websites-->
+        <div class="clone__websites">
+          <div
+            class="flex justify-center w-full p-10 mt-20 text-center bg-black"
+          >
+            <h2 class="text-lime-400 text-[3rem] font-light italic underline">
+              Clone Websites
+            </h2>
+          </div>
+          <div class="p-10 bg-black">
+            <div
+              class="flex flex-col items-center justify-center w-full py-10 lg:flex-row lg:gap-10 max-w-[1440px] m-auto lg:justify-evenly border-b-2 border-lime-400"
+            >
+              <div
+                class="flex flex-col items-center justify-center text-center max-w-[500px] p-4 lg:text-left lg:items-start"
+              >
+                <h3 class="text-[1.5rem] font-bold">Clone Razer Homepage</h3>
+                <p class="mt-4 text-[1.2rem] mb-8">
+                  For practise purpose on my early steps on HTML and CSS I
+                  decided to clone famous sites like razer.com The site is full
+                  responsive and mobile friendly.
+                </p>
+
+                <div class="flex flex-col gap-8 mb-4 buttons md:flex-row">
+                  <img
+                    src="https://skillicons.dev/icons?i=html,css&theme=light"
+                    alt="skill-icon"
+                  />
+                  <a
+                    href="https://github.com/alexlangidis/workspace/tree/main/Razer"
+                    target="_blank"
+                  >
+                    <button class="btn-primary">
+                      Code <i class="ml-1 fa-brands fa-github"></i>
+                    </button>
+                  </a>
+                  <a
+                    href="https://alexlangidis.github.io/workspace/Razer/"
+                    target="_blank"
+                  >
+                    <button class="btn-primary">
+                      Live Demo
+                      <i
+                        class="ml-1 fa-solid fa-arrow-up-right-from-square"
+                      ></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="https://alexlangidis.github.io/workspace/Razer/"
+                  target="_blank"
+                >
+                  <img
+                    src="../alexlangidis.github.io/src/images/Screenshot_5.png"
+                    alt="website-screenshot"
+                    class="w-full rounded-3xl max-w-[500px] border-2 shadow-[0_0_10px_5px_rgba(203,213,225,0.75)] hover:scale-105 duration-500 hover:cursor-pointer hover:shadow-[0_0_20px_10px_rgba(203,213,225,0.75)]"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col-reverse items-center justify-center w-full py-10 lg:flex-row lg:gap-10 max-w-[1440px] m-auto lg:justify-evenly"
+            >
+              <div>
+                <a
+                  href="https://alexlangidis.github.io/tailwind-projects/Discord/"
+                  target="_blank"
+                >
+                  <img
+                    src="../alexlangidis.github.io/src/images/Screenshot_6.png"
+                    alt="website-screenshot"
+                    class="w-full rounded-3xl max-w-[500px] border-2 shadow-[0_0_10px_5px_rgba(96,165,250,0.75)] hover:scale-105 duration-500 hover:cursor-pointer hover:shadow-[0_0_20px_10px_rgba(96,165,250,0.75)]"
+                  />
+                </a>
+              </div>
+              <div
+                class="flex flex-col items-center justify-center text-center max-w-[500px] p-4 lg:text-left lg:items-start"
+              >
+                <h3 class="text-[1.5rem] font-bold">Clone Discord Homepage</h3>
+                <p class="mt-4 text-[1.2rem] mb-8">
+                  As I keep learning more and practising my front-end skills I
+                  decided to clone discord.com homepage for practice purpose. On
+                  this site I used HTML, TailwindCss and little JQuery for the
+                  mobile menu.
+                </p>
+
+                <div class="flex flex-col gap-8 mb-4 buttons md:flex-row">
+                  <img
+                    src="https://skillicons.dev/icons?i=html,tailwind,jquery&theme=light"
+                    alt="skill-icon"
+                  />
+                  <a
+                    href="https://github.com/alexlangidis/tailwind-projects/tree/main/Discord"
+                    target="_blank"
+                  >
+                    <button class="btn-primary">
+                      Code <i class="ml-1 fa-brands fa-github"></i>
+                    </button>
+                  </a>
+                  <a
+                    href="https://alexlangidis.github.io/tailwind-projects/Discord/"
+                    target="_blank"
+                  >
+                    <button class="btn-primary">
+                      Live Demo
+
+                      <i
+                        class="ml-1 fa-solid fa-arrow-up-right-from-square"
+                      ></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--End of Clone  Websites-->
+
+        <!--Portfolio Websites-->
+        <div>
+          <div class="flex justify-center mt-20 text-center websites-demo">
+            <h2 class="text-lime-400 text-[3rem] font-light italic underline">
+              Portfolio Websites
+            </h2>
+          </div>
+          <div class="projects__content">
+            <div class="projects__content__column">
+              <div
+                class="grid grid-cols-1 grid-rows-3 gap-8 lg:grid-cols-2 lg:grid-rows-2 xl:grid-cols-3 xl:grid-rows-1 div"
+              >
+                <div class="column">
+                  <a href="https://aicopyhub.com/" target="_blank">
+                    <img
+                      src="../alexlangidis.github.io/src/images/Screenshot_4.png"
+                      alt="screenshot"
+                      class="project-img-websites"
+                  /></a>
+                  <h2>AiCopyHub.com</h2>
+                  <p>
+                    Personal Website Project. Built using elementor and
+                    elementor widgets. This is the front end Sales Page for a ai
+                    tool called AiCopyHub that using OpenAi GPT technology
+                  </p>
+                  <div
+                    class="flex flex-col items-center justify-center w-full gap-4 md:flex-row"
+                  >
+                    <img
+                      src="https://skillicons.dev/icons?i=wordpress&theme=light"
+                      alt="skill-icon"
+                    />
+                    <a href="https://aicopyhub.com/" target="_blank">
+                      <button class="btn-primary">
+                        Live Demo
+                        <i
+                          class="ml-1 fa-solid fa-arrow-up-right-from-square"
+                        ></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <a href="https://www.edemrestaurant.gr/" target="_blank">
+                    <img
+                      src="../alexlangidis.github.io/src/images/Screenshot_7.png"
+                      alt="screenshot"
+                      class="project-img-websites"
+                    />
+                  </a>
+                  <h2>EdemRestaurant.gr</h2>
+                  <p>
+                    Built using wordpress and Elementor on 2 languages. The
+                    purpose of the website is to give visitors the ability to
+                    see Restaurant & cafe menu and contact Restaurant using
+                    contact form
+                  </p>
+
+                  <div
+                    class="flex flex-col items-center justify-center w-full gap-4 md:flex-row"
+                  >
+                    <img
+                      src="https://skillicons.dev/icons?i=wordpress&theme=light"
+                      alt="skill-icon"
+                    />
+                    <a href="https://www.edemrestaurant.gr/" target="_blank">
+                      <button class="btn-primary">
+                        Live Demo
+                        <i
+                          class="ml-1 fa-solid fa-arrow-up-right-from-square"
+                        ></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <a href="https://athenaprivatetours.com/" target="_blank">
+                    <img
+                      src="../alexlangidis.github.io/src/images/Screenshot_2.png"
+                      alt="screenshot"
+                      class="project-img-websites"
+                    />
+                  </a>
+                  <h2>AthenaPrivateTours.com</h2>
+                  <p>
+                    Website built using wordpress and Divi. The purpose was to
+                    promote tours, have a description of each tour and also give
+                    the ability to visitors to quote tours by completing simple
+                    "booking" form.
+                  </p>
+                  <div
+                    class="flex flex-col items-center justify-center w-full gap-4 md:flex-row"
+                  >
+                    <img
+                      src="https://skillicons.dev/icons?i=wordpress&theme=light"
+                      alt="skill-icon"
+                    />
+                    <a href="https://athenaprivatetours.com/" target="_blank">
+                      <button class="btn-primary">
+                        Live Demo
+                        <i
+                          class="ml-1 fa-solid fa-arrow-up-right-from-square"
+                        ></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of Projects - Portfolio Section-->
+
+      <!-- Contact Me Section-->
+      <section id="contact" class="bg-black">
+        <div
+          class="flex flex-col items-center justify-center pt-10 contact__info"
+        >
+          <h2 class="text-lime-400 text-[2rem] font-light italic underline">
+            Contact Me
+          </h2>
+
+          <div
+            class="flex flex-col gap-4 my-4 mb-10 contact__info__columns md:flex-row"
+          >
+            <div
+              class="flex items-center justify-start contact__info__column hover:text-lime-400"
+            >
+              <i
+                class="fa-solid fa-map-location-dot border-[1px] rounded-full p-4"
+              ></i>
+              <div class="flex flex-col ml-4">
+                <h3>Location</h3>
+                <p>Athens, Greece</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-center contact__info__column hover:text-lime-400"
+            >
+              <i class="fa-solid fa-envelope border-[1px] rounded-full p-4"></i>
+              <div class="flex flex-col ml-4">
+                <h3>E-mail</h3>
+                <p>alexlag.dev@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="copyright flex justify-between items-center max-w-[1440px] border-t-[1px] p-4 m-auto"
+        >
+          <p>Copyright © 2023. All rights are reserved</p>
+
+          <div class="flex gap-4 contact-icons text-[1.3rem]">
+            <a href="https://github.com/alexlangidis" target="_blank"
+              ><i class="ml-8 fa-brands fa-github hover:text-lime-400"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/alex-langidis/" target="_blank"
+              ><i class="fa-brands fa-linkedin hover:text-lime-400"></i
+            ></a>
+            <a
+              href="https://www.freecodecamp.org/alex-langidis"
+              target="_blank"
+            >
+              <i class="fa-brands fa-free-code-camp hover:text-lime-400"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
