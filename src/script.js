@@ -20,6 +20,7 @@ $(document).ready(function () {
  // Close mobile menu when li is clicked
     $('.mobile-menu li').click(function () {
       $('.fa-bars, .fa-xmark, .mobile-menu').toggleClass('hidden');
+      $('.menu-div').toggleClass('h-screen');
     });
 
 });
