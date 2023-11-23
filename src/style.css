@@ -710,32 +710,16 @@ body {
   right: 0px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-8 {
-  top: 2rem;
-}
-
-.top-6 {
-  top: 1.5rem;
-}
-
 .right-8 {
   right: 2rem;
 }
 
-.right-6 {
-  right: 1.5rem;
+.top-0 {
+  top: 0px;
+}
+
+.top-6 {
+  top: 1.5rem;
 }
 
 .z-50 {
@@ -1069,10 +1053,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .lg\:sticky {
-    position: sticky;
-  }
-
   .lg\:mr-10 {
     margin-right: 2.5rem;
   }
