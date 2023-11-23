@@ -675,6 +675,10 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -827,6 +831,10 @@ body {
   width: 100%;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
 .max-w-\[1440px\] {
   max-width: 1440px;
 }
@@ -841,6 +849,10 @@ body {
 
 .max-w-\[600px\] {
   max-width: 600px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .grid-cols-1 {
@@ -1127,6 +1139,10 @@ body {
 
   .lg\:mr-10 {
     margin-right: 2.5rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
