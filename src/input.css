@@ -35,7 +35,7 @@
   }
 
   .projects__content__column {
-    @apply flex flex-col items-center justify-center  lg:flex-row-reverse lg:max-w-[1280px] lg:gap-8;
+    @apply flex flex-col items-center justify-center w-full m-auto lg:flex-row-reverse lg:max-w-[1280px] lg:gap-8;
   }
 
   .project-img {
