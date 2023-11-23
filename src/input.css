@@ -19,7 +19,7 @@
 
 @layer components {
   body {
-    @apply flex flex-col items-center justify-center w-full m-auto text-white bg-gray-900;
+    @apply flex flex-col items-center justify-center w-full m-auto overflow-x-hidden text-white bg-gray-900;
   }
 
   /* section {
