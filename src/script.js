@@ -4,6 +4,7 @@ $(document).ready(function () {
     $('.fa-bars, .fa-xmark').click(function (e) { 
         e.preventDefault();
         $('.fa-bars, .fa-xmark, .mobile-menu').toggleClass('hidden');
+        $('.menu-div').toggleClass('h-screen');
     });
 
 

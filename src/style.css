@@ -704,6 +704,10 @@ body {
   z-index: 50;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -773,8 +777,20 @@ body {
   display: none;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-full {
@@ -791,6 +807,10 @@ body {
 
 .max-w-\[500px\] {
   max-width: 500px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .grid-cols-1 {
@@ -839,6 +859,10 @@ body {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-3xl {
@@ -1077,6 +1101,14 @@ body {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-0 {
+    height: 0px;
+  }
+
+  .lg\:h-full {
+    height: 100%;
   }
 
   .lg\:max-w-\[600px\] {
