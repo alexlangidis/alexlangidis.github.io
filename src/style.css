@@ -824,10 +824,6 @@ body {
   max-width: 1440px;
 }
 
-.max-w-\[300px\] {
-  max-width: 300px;
-}
-
 .max-w-\[500px\] {
   max-width: 500px;
 }
@@ -846,6 +842,10 @@ body {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
