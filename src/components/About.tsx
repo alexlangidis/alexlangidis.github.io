@@ -14,7 +14,7 @@ export default function About() {
           viewport={{ once: true }}
           className="flex flex-col md:flex-row items-center gap-12"
         >
-          <div className="flex-1">
+          <div className="flex-1 w-full">
             <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/images/giphy.gif"

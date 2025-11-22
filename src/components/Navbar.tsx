@@ -37,8 +37,8 @@ export default function Navbar() {
       className={cn(
         "fixed top-0 z-50 w-full transition-all duration-300",
         isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b shadow-sm"
-          : "bg-transparent"
+          ? "bg-background/95 backdrop-blur-3xl border-b shadow-sm"
+          : "bg-background/50 backdrop-blur-sm"
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
@@ -59,8 +59,7 @@ export default function Navbar() {
           ))}
           <Button
             asChild
-            variant="outline"
-            className="rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            className="rounded-full cursor-pointer transition-all duration-300 border border-black dark:border-white shadow-[0_0_20px_hsl(var(--foreground)/0.5)] hover:-translate-y-1 bg-black text-white dark:bg-white dark:text-black hover:bg-black/90 dark:hover:bg-white/90"
           >
             <Link href="/Alexandros-Langidis-cv.pdf" target="_blank">
               Resume / CV
@@ -92,7 +91,10 @@ export default function Navbar() {
                     {item.name}
                   </Link>
                 ))}
-                <Button asChild className="w-full mt-4">
+                <Button
+                  asChild
+                  className="w-full mt-4 cursor-pointer transition-all duration-300 border border-black dark:border-white shadow-[0_0_20px_hsl(var(--foreground)/0.5)] hover:-translate-y-1 bg-black text-white dark:bg-white dark:text-black hover:bg-black/90 dark:hover:bg-white/90"
+                >
                   <Link href="/Alexandros-Langidis-cv.pdf" target="_blank">
                     Resume / CV
                   </Link>

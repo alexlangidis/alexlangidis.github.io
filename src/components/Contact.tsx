@@ -48,29 +48,20 @@ export default function Contact() {
           </div>
 
           <div className="flex gap-4 mt-8">
-            <Button
-              asChild
-              variant="outline"
-              size="icon"
-              className="rounded-full"
+            <Link
+              href="https://github.com/alexlangidis"
+              target="_blank"
+              className="p-2 rounded-full border border-muted-foreground/20 text-muted-foreground hover:text-white hover:bg-black hover:border-black dark:hover:text-black dark:hover:bg-white dark:hover:border-white transition-all duration-300"
             >
-              <Link href="https://github.com/alexlangidis" target="_blank">
-                <Github className="h-5 w-5" />
-              </Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="icon"
-              className="rounded-full"
+              <Github className="h-5 w-5" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/alex-langidis"
+              target="_blank"
+              className="p-2 rounded-full border border-muted-foreground/20 text-muted-foreground hover:text-white hover:bg-black hover:border-black dark:hover:text-black dark:hover:bg-white dark:hover:border-white transition-all duration-300"
             >
-              <Link
-                href="https://www.linkedin.com/in/alex-langidis"
-                target="_blank"
-              >
-                <Linkedin className="h-5 w-5" />
-              </Link>
-            </Button>
+              <Linkedin className="h-5 w-5" />
+            </Link>
           </div>
         </motion.div>
       </div>

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import GridBackground from "@/components/GridBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,8 +27,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <GridBackground />
           <Navbar />
-          <main className="min-h-screen bg-background text-foreground">
+          <main className="min-h-screen bg-background/50 text-foreground relative">
             {children}
           </main>
           <Footer />

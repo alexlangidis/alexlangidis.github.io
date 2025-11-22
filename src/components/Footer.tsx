@@ -13,14 +13,14 @@ export default function Footer() {
           <Link
             href="https://github.com/alexlangidis"
             target="_blank"
-            className="text-muted-foreground hover:text-primary transition-colors"
+            className="p-2 rounded-full border border-muted-foreground/20 text-muted-foreground hover:text-white hover:bg-black hover:border-black dark:hover:text-black dark:hover:bg-white dark:hover:border-white transition-all duration-300"
           >
             <Github className="h-5 w-5" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/alex-langidis"
             target="_blank"
-            className="text-muted-foreground hover:text-primary transition-colors"
+            className="p-2 rounded-full border border-muted-foreground/20 text-muted-foreground hover:text-white hover:bg-black hover:border-black dark:hover:text-black dark:hover:bg-white dark:hover:border-white transition-all duration-300"
           >
             <Linkedin className="h-5 w-5" />
           </Link>

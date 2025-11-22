@@ -63,7 +63,7 @@ export default function Projects() {
               transition={{ duration: 0.3, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 border-muted-foreground/20">
+              <Card className="h-full flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 border-muted-foreground/20 pt-0">
                 <div className="relative w-full h-48 overflow-hidden group">
                   <Image
                     src={project.image}
