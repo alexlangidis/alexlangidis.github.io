@@ -1,5 +1,15 @@
 export const projects = [
   {
+    id: "quantum-buildings",
+    title: "Quantum Buildings",
+    description:
+      "A professional technology project management website built using WordPress and Elementor Pro, featuring custom CSS styling and animations for a unique and polished look.",
+    image: "/images/quantumbuildings.png",
+    tags: ["WordPress", "Elementor Pro", "Custom CSS", "JavaScript"],
+    liveUrl: "https://quantumbuildings.gr/",
+    category: "Real World",
+  },
+  {
     id: "todo-app-v2",
     title: "Todo App v2",
     description:
