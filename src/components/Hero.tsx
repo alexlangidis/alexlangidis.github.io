@@ -62,7 +62,7 @@ export default function Hero() {
               size="lg"
               className="rounded-full cursor-pointer transition-all duration-300 border border-black dark:border-white shadow-[0_0_20px_hsl(var(--foreground)/0.5)] hover:-translate-y-1 bg-black text-white dark:bg-white dark:text-black hover:bg-black/90 dark:hover:bg-white/90"
             >
-              <Link href="/Alexandros-Langidis-cv.pdf" target="_blank">
+              <Link href="/Alexandros-Langidis-CV-new.pdf" target="_blank">
                 <FileText className="mr-2 h-5 w-5" /> Resume / CV
               </Link>
             </Button>
