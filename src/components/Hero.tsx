@@ -22,7 +22,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left space-y-8"
         >
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter min-h-[80px] lg:min-h-auto">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter min-h-20 lg:min-h-auto">
             I am a{" "}
             <span className="text-primary">
               <Typewriter />
@@ -62,7 +62,7 @@ export default function Hero() {
               size="lg"
               className="rounded-full cursor-pointer transition-all duration-300 border border-black dark:border-white shadow-[0_0_20px_hsl(var(--foreground)/0.5)] hover:-translate-y-1 bg-black text-white dark:bg-white dark:text-black hover:bg-black/90 dark:hover:bg-white/90"
             >
-              <Link href="/Alexandros-Langidis-CV-new.pdf" target="_blank">
+              <Link href="/Alexandros%20Langidis-CV.pdf" target="_blank">
                 <FileText className="mr-2 h-5 w-5" /> Resume / CV
               </Link>
             </Button>
