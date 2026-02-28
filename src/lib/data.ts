@@ -1,5 +1,22 @@
 export const projects = [
   {
+    id: "greek-luxury-holidays",
+    title: "Greek Luxury Holidays",
+    description:
+      "A premium villas website project built with WordPress and Elementor Pro, enhanced with custom CSS, JavaScript, and ACF custom snippets.",
+    image: "/images/81e11b8c-21e2-4025-a1df-fa9529942f8b.png",
+    tags: [
+      "WordPress",
+      "Elementor Pro",
+      "Custom CSS",
+      "JavaScript",
+      "ACF custom snippets",
+    ],
+    category: "Real World",
+    comingSoon: true,
+    inactiveImage: true,
+  },
+  {
     id: "quantum-buildings",
     title: "Quantum Buildings",
     description:

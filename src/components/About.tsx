@@ -33,18 +33,15 @@ export default function About() {
               A dedicated Front-end Developer based in Athens, Greece
             </h3>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              I’m a junior front-end developer passionate about building
-              user-friendly and visually engaging web applications. I specialize
-              in HTML, CSS, and JavaScript, with a strong focus on responsive
-              design, clean code, and seamless user experiences. Currently, I’m
-              deepening my expertise in React, TypeScript, and Next.js, building
-              modern, scalable, and high-performance interfaces. Alongside
-              front-end development, I’m exploring databases and SQL to better
-              understand how data drives applications. I also enjoy leveraging
-              AI tools and automation to streamline workflows and improve
-              project efficiency. Always eager to learn and collaborate within
-              dynamic teams, I’m motivated to continuously grow my skill set and
-              contribute to innovative, impactful digital products.
+              Front-end Developer specializing in building responsive,
+              high-performance, and user-centered web applications. Experienced
+              in HTML, CSS, and JavaScript, with growing expertise in React,
+              TypeScript, and Next.js. Passionate about clean code, modern
+              UI/UX practices, and scalable architecture. Continuously expanding
+              my knowledge in databases and SQL to strengthen my full-stack
+              understanding, while leveraging AI tools and automation to
+              optimize workflows and deliver efficient, impactful digital
+              solutions.
             </p>
           </div>
         </motion.div>

@@ -69,8 +69,13 @@ export default function Projects() {
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className={`object-cover transition-transform duration-500 group-hover:scale-105 ${
+                      project.inactiveImage ? "grayscale-[35%] brightness-75" : ""
+                    }`}
                   />
+                  {project.inactiveImage && (
+                    <div className="absolute inset-0 bg-black/25" />
+                  )}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                     {project.liveUrl && (
                       <Button
@@ -121,6 +126,14 @@ export default function Projects() {
                       <Link href={project.liveUrl} target="_blank">
                         <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
                       </Link>
+                    </Button>
+                  )}
+                  {project.comingSoon && !project.liveUrl && (
+                    <Button
+                      disabled
+                      className="flex-1 cursor-not-allowed border border-dashed border-primary/40 bg-transparent text-muted-foreground"
+                    >
+                      Coming Soon
                     </Button>
                   )}
                 </CardFooter>
