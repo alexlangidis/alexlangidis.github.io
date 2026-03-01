@@ -52,7 +52,7 @@ export const projects = [
     title: "Todo App v2",
     description:
       "An improved version of a todo application built with React, TypeScript, Tailwind CSS, and Firebase for real-time data management. Features include task creation, editing, deletion, and user authentication.",
-    image: "/images/todo-app.png",
+    image: "/images/Screenshot_46.png",
     tags: ["React", "TypeScript", "Tailwind", "Firebase"],
     codeUrl: "https://github.com/alexlangidis/todo-app-v2",
     liveUrl: "https://alexlangidis.github.io/todo-app-v2/",
