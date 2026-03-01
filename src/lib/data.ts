@@ -27,6 +27,27 @@ export const projects = [
     category: "Real World",
   },
   {
+    id: "clickdom",
+    title: "Clickdom.gr",
+    description:
+      "E-Commerce Website Project, built using WooCommerce and the Flatsome theme. Incorporates multiple courier and payment methods, with speed optimization.",
+    image: "/images/Screenshot_12.png",
+    tags: ["WordPress", "WooCommerce", "Flatsome"],
+    liveUrl: "https://clickdom.gr/",
+    category: "Real World",
+  },
+  {
+    id: "seo-generator",
+    title: "SEO Generator",
+    description:
+      "An AI-powered SEO tool demo built with Next.js that helps generate optimized page titles, meta descriptions, and keyword-focused content ideas. It is deployed on Vercel and uses the Gemini API to produce fast, practical SEO suggestions for websites and landing pages.",
+    image: "/images/Screenshot_45.png",
+    tags: ["Next Js", "Vercel", "Gemini API"],
+    codeUrl: "https://github.com/alexlangidis/workspace/tree/main/seo-generator",
+    liveUrl: "https://workspace-iota-peach.vercel.app/",
+    category: "Mini Projects",
+  },
+  {
     id: "todo-app-v2",
     title: "Todo App v2",
     description:
@@ -35,16 +56,6 @@ export const projects = [
     tags: ["React", "TypeScript", "Tailwind", "Firebase"],
     codeUrl: "https://github.com/alexlangidis/todo-app-v2",
     liveUrl: "https://alexlangidis.github.io/todo-app-v2/",
-    category: "Real World",
-  },
-  {
-    id: "clickdom",
-    title: "Clickdom.gr",
-    description:
-      "E-Commerce Website Project, built using WooCommerce and the Flatsome theme. Incorporates multiple courier and payment methods, with speed optimization.",
-    image: "/images/Screenshot_12.png",
-    tags: ["WordPress", "WooCommerce", "Flatsome"],
-    liveUrl: "https://clickdom.gr/",
     category: "Real World",
   },
   {
