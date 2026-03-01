@@ -42,7 +42,7 @@ export const projects = [
     description:
       "An AI-powered SEO tool demo built with Next.js that helps generate optimized page titles, meta descriptions, and keyword-focused content ideas. It is deployed on Vercel and uses the Gemini API to produce fast, practical SEO suggestions for websites and landing pages.",
     image: "/images/Screenshot_45.png",
-    tags: ["Next Js", "Vercel", "Gemini API"],
+    tags: ["Next Js", "Tailwind", "Shadcn", "Vercel", "Gemini API"],
     codeUrl: "https://github.com/alexlangidis/workspace/tree/main/seo-generator",
     liveUrl: "https://workspace-iota-peach.vercel.app/",
     category: "Mini Projects",
