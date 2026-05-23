@@ -13,7 +13,8 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { GitHubIcon } from "@/components/SocialIcons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -114,7 +115,7 @@ export default function Projects() {
                       className="flex-1 cursor-pointer hover:bg-primary/10 hover:text-primary hover:border-primary transition-all duration-300 border-primary/20 hover:shadow-[0_0_20px_hsl(var(--primary)/0.4)] hover:-translate-y-1"
                     >
                       <Link href={project.codeUrl} target="_blank">
-                        <Github className="mr-2 h-4 w-4" /> View Code
+                        <GitHubIcon className="mr-2 h-4 w-4" /> View Code
                       </Link>
                     </Button>
                   )}

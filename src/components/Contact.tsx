@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Github, Linkedin } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Mail, MapPin } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "@/components/SocialIcons";
 import Link from "next/link";
 
 export default function Contact() {
@@ -53,14 +53,14 @@ export default function Contact() {
               target="_blank"
               className="p-2 rounded-full border border-muted-foreground/20 text-muted-foreground hover:text-white hover:bg-black hover:border-black dark:hover:text-black dark:hover:bg-white dark:hover:border-white transition-all duration-300"
             >
-              <Github className="h-5 w-5" />
+              <GitHubIcon className="h-5 w-5" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/alex-langidis"
               target="_blank"
               className="p-2 rounded-full border border-muted-foreground/20 text-muted-foreground hover:text-white hover:bg-black hover:border-black dark:hover:text-black dark:hover:bg-white dark:hover:border-white transition-all duration-300"
             >
-              <Linkedin className="h-5 w-5" />
+              <LinkedInIcon className="h-5 w-5" />
             </Link>
           </div>
         </motion.div>

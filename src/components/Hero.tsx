@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, FileText } from "lucide-react";
+import { FileText } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "@/components/SocialIcons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -41,7 +42,7 @@ export default function Hero() {
               className="rounded-full hover:border-primary hover:text-primary hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] transition-all duration-300"
             >
               <Link href="https://github.com/alexlangidis" target="_blank">
-                <Github className="mr-2 h-5 w-5" /> GitHub
+                <GitHubIcon className="mr-2 h-5 w-5" /> GitHub
               </Link>
             </Button>
             <Button
@@ -54,7 +55,7 @@ export default function Hero() {
                 href="https://www.linkedin.com/in/alex-langidis"
                 target="_blank"
               >
-                <Linkedin className="mr-2 h-5 w-5" /> LinkedIn
+                <LinkedInIcon className="mr-2 h-5 w-5" /> LinkedIn
               </Link>
             </Button>
             <Button

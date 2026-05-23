@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Linkedin } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "@/components/SocialIcons";
 
 export default function Footer() {
   return (
@@ -15,14 +15,14 @@ export default function Footer() {
             target="_blank"
             className="p-2 rounded-full border border-muted-foreground/20 text-muted-foreground hover:text-white hover:bg-black hover:border-black dark:hover:text-black dark:hover:bg-white dark:hover:border-white transition-all duration-300"
           >
-            <Github className="h-5 w-5" />
+            <GitHubIcon className="h-5 w-5" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/alex-langidis"
             target="_blank"
             className="p-2 rounded-full border border-muted-foreground/20 text-muted-foreground hover:text-white hover:bg-black hover:border-black dark:hover:text-black dark:hover:bg-white dark:hover:border-white transition-all duration-300"
           >
-            <Linkedin className="h-5 w-5" />
+            <LinkedInIcon className="h-5 w-5" />
           </Link>
         </div>
       </div>

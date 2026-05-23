@@ -1,11 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
 
 export default function GridBackground() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const { theme } = useTheme();
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
