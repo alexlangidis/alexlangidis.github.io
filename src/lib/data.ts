@@ -1,10 +1,40 @@
-export const projects = [
+export type ProjectCategory =
+  | "WordPress"
+  | "WooCommerce"
+  | "Apps"
+  | "Mini Projects";
+
+type Project = {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  categories: ProjectCategory[];
+  codeUrl?: string;
+  liveUrl?: string;
+  comingSoon?: boolean;
+  inactiveImage?: boolean;
+};
+
+export const projects: Project[] = [
+  {
+    id: "flowboard",
+    title: "FlowBoard",
+    description:
+      "A Trello-style project management app built with React, Cloudflare Workers, and Neon Postgres, designed for organizing tasks across boards, lists, and cards with a clean workflow-focused interface.",
+    image: "/images/FlowBoard.png",
+    tags: ["React", "Cloudflare Workers", "Neon", "PostgreSQL", "Cursor"],
+    codeUrl: "https://github.com/alexlangidis/flowboard",
+    liveUrl: "https://flowboard.alexlag-dev.workers.dev/",
+    categories: ["Apps"],
+  },
   {
     id: "greek-luxury-holidays",
     title: "Greek Luxury Holidays",
     description:
       "A premium villas website project built with WordPress and Elementor Pro, enhanced with custom CSS, JavaScript, and ACF custom snippets.",
-    image: "/images/81e11b8c-21e2-4025-a1df-fa9529942f8b.png",
+    image: "/images/greekluxuryholidays.png",
     tags: [
       "WordPress",
       "Elementor Pro",
@@ -12,9 +42,8 @@ export const projects = [
       "JavaScript",
       "ACF custom snippets",
     ],
-    category: "Real World",
-    comingSoon: true,
-    inactiveImage: true,
+    liveUrl: "https://greekluxuryholidays.gr/",
+    categories: ["WordPress"],
   },
   {
     id: "quantum-buildings",
@@ -24,7 +53,7 @@ export const projects = [
     image: "/images/quantumbuildings.png",
     tags: ["WordPress", "Elementor Pro", "Custom CSS", "JavaScript"],
     liveUrl: "https://quantumbuildings.gr/",
-    category: "Real World",
+    categories: ["WordPress"],
   },
   {
     id: "clickdom",
@@ -34,7 +63,7 @@ export const projects = [
     image: "/images/Screenshot_12.png",
     tags: ["WordPress", "WooCommerce", "Flatsome"],
     liveUrl: "https://clickdom.gr/",
-    category: "Real World",
+    categories: ["WordPress", "WooCommerce"],
   },
   {
     id: "seo-generator",
@@ -45,7 +74,7 @@ export const projects = [
     tags: ["Next Js", "Tailwind", "Shadcn", "Vercel", "Gemini API"],
     codeUrl: "https://github.com/alexlangidis/workspace/tree/main/seo-generator",
     liveUrl: "https://workspace-iota-peach.vercel.app/",
-    category: "Mini Projects",
+    categories: ["Apps"],
   },
   {
     id: "todo-app-v2",
@@ -56,7 +85,7 @@ export const projects = [
     tags: ["React", "TypeScript", "Tailwind", "Firebase"],
     codeUrl: "https://github.com/alexlangidis/todo-app-v2",
     liveUrl: "https://alexlangidis.github.io/todo-app-v2/",
-    category: "Real World",
+    categories: ["Apps"],
   },
   {
     id: "edem",
@@ -66,7 +95,7 @@ export const projects = [
     image: "/images/Screenshot_7.png",
     tags: ["WordPress", "Elementor"],
     liveUrl: "https://www.edemrestaurant.gr/",
-    category: "Real World",
+    categories: ["WordPress"],
   },
   {
     id: "athena",
@@ -76,7 +105,7 @@ export const projects = [
     image: "/images/Screenshot_2.png",
     tags: ["WordPress", "Divi"],
     liveUrl: "https://athenaprivatetours.com/",
-    category: "Real World",
+    categories: ["WordPress"],
   },
   {
     id: "razer-clone",
@@ -87,7 +116,7 @@ export const projects = [
     tags: ["HTML", "CSS"],
     codeUrl: "https://github.com/alexlangidis/workspace/tree/main/Razer",
     liveUrl: "https://alexlangidis.github.io/workspace/Razer/",
-    category: "Clone",
+    categories: ["Mini Projects"],
   },
   {
     id: "discord-clone",
@@ -99,7 +128,7 @@ export const projects = [
     codeUrl:
       "https://github.com/alexlangidis/tailwind-projects/tree/main/Discord",
     liveUrl: "https://alexlangidis.github.io/tailwind-projects/Discord/",
-    category: "Clone",
+    categories: ["Mini Projects"],
   },
   {
     id: "defi-site",
@@ -109,7 +138,7 @@ export const projects = [
     tags: ["React", "API", "CSS"],
     codeUrl: "https://github.com/alexlangidis/defi-site",
     liveUrl: "https://sparkly-sprinkles-6270c8.netlify.app/",
-    category: "Clone",
+    categories: ["Mini Projects"],
   },
   {
     id: "frontend-mentor",
@@ -119,7 +148,7 @@ export const projects = [
     image: "/images/Screenshot_1.png",
     tags: ["HTML", "CSS", "JS", "Tailwind", "SCSS"],
     codeUrl: "https://github.com/alexlangidis/junior-frontendmentor",
-    liveUrl: "https://www.frontendmentor.io/profile/alexlangidis/solutions",
-    category: "Mini Projects",
+    liveUrl: "https://www.frontendmentor.io/profile/alexlangidis?tab=solutions",
+    categories: ["Mini Projects"],
   },
 ];

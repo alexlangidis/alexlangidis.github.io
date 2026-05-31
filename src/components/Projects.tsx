@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { projects } from "@/lib/data";
+import type { ProjectCategory } from "@/lib/data";
 import {
   Card,
   CardContent,
@@ -19,12 +20,22 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Projects() {
-  const [filter, setFilter] = useState<string>("All");
+  type ProjectFilter = "All" | ProjectCategory;
 
-  const categories = ["All", "Real World", "Clone", "Mini Projects"];
+  const [filter, setFilter] = useState<ProjectFilter>("All");
+
+  const categories: ProjectFilter[] = [
+    "All",
+    "WordPress",
+    "WooCommerce",
+    "Apps",
+    "Mini Projects",
+  ];
 
   const filteredProjects =
-    filter === "All" ? projects : projects.filter((p) => p.category === filter);
+    filter === "All"
+      ? projects
+      : projects.filter((p) => p.categories.includes(filter));
 
   return (
     <section id="projects" className="py-20">
