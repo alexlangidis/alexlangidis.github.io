@@ -26,7 +26,7 @@ export const projects: Project[] = [
     image: "/images/FlowBoard.png",
     tags: ["React", "Cloudflare Workers", "Neon", "PostgreSQL", "Cursor"],
     codeUrl: "https://github.com/alexlangidis/flowboard",
-    liveUrl: "https://flowboard.alexlag-dev.workers.dev/",
+    liveUrl: "https://flowboard.alexlag-dev.workers.dev/login",
     categories: ["Apps"],
   },
   {

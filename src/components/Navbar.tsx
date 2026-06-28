@@ -61,7 +61,7 @@ export default function Navbar() {
             asChild
             className="rounded-full cursor-pointer transition-all duration-300 border border-black dark:border-white shadow-[0_0_20px_hsl(var(--foreground)/0.5)] hover:-translate-y-1 bg-black text-white dark:bg-white dark:text-black hover:bg-black/90 dark:hover:bg-white/90"
           >
-            <Link href="/Alexandros%20Langidis-CV.pdf" target="_blank">
+            <Link href="/Alexandros_Langidis_CV.pdf" target="_blank">
               Resume / CV
             </Link>
           </Button>
@@ -95,7 +95,7 @@ export default function Navbar() {
                   asChild
                   className="w-full mt-4 cursor-pointer transition-all duration-300 border border-black dark:border-white shadow-[0_0_20px_hsl(var(--foreground)/0.5)] hover:-translate-y-1 bg-black text-white dark:bg-white dark:text-black hover:bg-black/90 dark:hover:bg-white/90"
                 >
-                  <Link href="/Alexandros%20Langidis-CV.pdf" target="_blank">
+                  <Link href="/Alexandros_Langidis_CV.pdf" target="_blank">
                     Resume / CV
                   </Link>
                 </Button>
