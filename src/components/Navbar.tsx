@@ -52,7 +52,7 @@ export default function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="relative text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:text-primary after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-0 after:rounded-full after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               {item.name}
             </Link>
@@ -86,7 +86,7 @@ export default function Navbar() {
                     key={item.name}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-lg font-medium hover:text-primary transition-colors"
+                    className="relative text-lg font-medium transition-all duration-300 hover:translate-x-1 hover:text-primary after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:rounded-full after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
                   >
                     {item.name}
                   </Link>
