@@ -19,6 +19,42 @@ type Project = {
 
 export const projects: Project[] = [
   {
+    id: "ai-commerce-hub",
+    title: "AI Commerce Hub Studio",
+    description:
+      "An AI-powered workspace for generating, rewriting, translating, and SEO-optimizing e-commerce product content, with brand voice tools, history, and reusable prompt templates.",
+    image: "/images/ai-commerce-hub.png",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Gemini API",
+      "Better Auth",
+      "Neon",
+    ],
+    codeUrl: "https://github.com/alexlangidis/ai-commerce-hub",
+    liveUrl: "https://ai-commerce-hub-studio.vercel.app/",
+    categories: ["Apps"],
+  },
+  {
+    id: "defi-dashboard",
+    title: "DeFi Dashboard",
+    description:
+      "A modern crypto market dashboard with live CoinGecko and GeckoTerminal data, token search, market movers, trending assets, DEX pools, charts, watchlists, and comparisons.",
+    image: "/images/defi-dashboard.png",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "CoinGecko API",
+      "GeckoTerminal",
+      "React Query",
+    ],
+    codeUrl: "https://github.com/alexlangidis/defi-dashboard",
+    liveUrl: "https://defi-dashboard-kappa.vercel.app/",
+    categories: ["Apps"],
+  },
+  {
     id: "flowboard",
     title: "FlowBoard",
     description:
